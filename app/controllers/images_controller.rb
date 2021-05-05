@@ -6,7 +6,7 @@ class ImagesController < ActionController::API
     )
     @img.file.attach(params[:file])
 
-    render :json => { :yes => "no" }#out
+    render :json => { :res => "create success" }
   end
 
   def delete
@@ -15,7 +15,7 @@ class ImagesController < ActionController::API
     @img.file.destroy
     @img.delete
 
-    render :json => { :results => "hi" }
+    render :json => { :results => "delete success" }
   end
 
   def show

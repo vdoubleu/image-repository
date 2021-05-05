@@ -30,3 +30,6 @@ The main endpoints used in the application are:
     - used to get a singular image from the server
 
 
+### Tests
+Tests have been written for the main image controller for the application.
+To run the test, simple go into the root directory of the project and run `ruby test/controllers/images_controller_test.rb`
